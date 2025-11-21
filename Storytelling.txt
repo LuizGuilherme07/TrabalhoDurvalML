@@ -1,0 +1,30 @@
+Métrica,Treino (60%),Validação (20%)
+R² (Explicação),0.6585 (65.8%),0.6987 (69.8%)
+RMSE (Erro Médio),"R$ 15.587,13","**R$ 14.325,58**"
+MAE (Erro Absoluto),"R$ 7.823,72","**R$ 8.154,25**"
+
+1. Contexto e Divisão dos Dados
+Para criar o modelo baseline de previsão de preços, utilizamos o dataset used_cars_price.csv contendo 2.520 registros. A estratégia de divisão foi 60/20/20:
+
+60% Treino: Para o algoritmo aprender os padrões.
+
+20% Validação: Para ajustar e verificar métricas durante o desenvolvimento.
+
+20% Teste: Isolados ("no cofre") para a validação final na Etapa 5.
+
+2. Resultados do Modelo Baseline
+Utilizamos uma Regressão Linear simples como ponto de partida. O modelo obteve um R² de 0.6987 na validação, o que significa que conseguimos explicar aproximadamente 70% da variação de preços dos carros usando apenas as características fornecidas (ano, quilometragem, marca, etc.).
+
+O erro médio absoluto (MAE) foi de R$ 8.154,25. Isso indica que, em média, nosso modelo erra o preço do carro em cerca de 8 mil reais para mais ou para menos. Considerando a variabilidade de preços de carros usados, é um ponto de partida razoável, mas que deixa margem para melhorias.
+
+3. Análise de Overfitting
+Comparando os resultados de Treino vs. Validação:
+
+R² Treino: 0.6585
+
+R² Validação: 0.6987
+
+Curiosamente, o modelo performou ligeiramente melhor na validação do que no treino. A diferença é pequena (cerca de 0.04) e não indica nenhum sinal de Overfitting (o modelo não "decorou" os dados). Pelo contrário, isso sugere que a divisão dos dados foi sortuda ou que os dados de validação são ligeiramente mais "fáceis" ou limpos que os de treino. O modelo está generalizando bem.
+
+4. Conclusão e Próximos Passos
+O Baseline cumpriu seu papel: estabeleceu um piso de performance (R² ~0.70). Para a Etapa 4 (Modelos Avançados), o objetivo será superar essa marca utilizando algoritmos mais robustos (como Random Forest ou XGBoost), que podem capturar relações não-lineares que a Regressão Linear simples não conseguiu enxergar, visando reduzir o erro médio para menos de R$ 7.000.
