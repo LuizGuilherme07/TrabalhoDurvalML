@@ -1,0 +1,42 @@
+ELATÓRIO FINAL - ETAPA 3
+Projeto: Previsão de Preços de Carros (Baseline)
+
+---
+
+1. RESULTADO DO MODELO
+Nesta primeira etapa, criamos um modelo simples (Regressão Linear) para testar se é possível prever os preços.
+
+Precisão (R²):** 70%
+    (O modelo conseguiu entender a lógica de preço de 7 a cada 10 carros).
+
+Margem de Erro (RMSE):** R$ 15.000,00
+    (Na média, o modelo erra o preço para cima ou para baixo nesse valor).
+
+---
+
+2. O QUE APRENDEMOS SOBRE O MERCADO?
+Analisando os dados, descobrimos o que faz o preço do carro disparar ou cair.
+
+O que valoriza o carro (Joga o preço para cima)
+1.  **Carros Elétricos e Híbridos:**
+    Ter essa tecnologia adiciona, em média, entre R$ 10.000 e R$ 20.000 ao valor final.
+2.  **Marca Volkswagen:**
+    Os dados mostram que veículos dessa marca tendem a segurar melhor o preço.
+
+O que desvaloriza o carro (Joga o preço para baixo)
+1.  **Combustível Etanol:**
+    Carros movidos exclusivamente a etanol sofrem uma desvalorização média de R$ 23.000.
+2.  **Versões de Entrada:**
+    Carros com bancos de tecido e tração simples valem menos, pois o modelo entende que são versões básicas.
+
+---
+
+ 3. CONCLUSÃO E PRÓXIMOS PASSOS
+O modelo "Baseline" funcionou e não decorou os dados (sem overfitting), mas um erro de 15 mil reais ainda é alto para o mercado.
+
+**O que faremos na Etapa 4?**
+Vamos trocar a "Regressão Linear" por modelos mais inteligentes (**Random Forest** e **XGBoost**). A meta é capturar regras mais complexas do mercado e tentar baixar esse erro para menos de 10 mil reais.
+
+
+Autor: Luiz Guilherme
+Data: 21/11/2025
