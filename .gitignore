@@ -1,0 +1,10 @@
+# Ignorar a pasta do ambiente virtual
+venv/
+.venv/
+
+# Ignorar arquivos temporários de Jupyter
+.ipynb_checkpoints
+
+# Ignorar arquivos grandes gerados por ML (Opcional, mas recomendado)
+*.pkl
+*.model

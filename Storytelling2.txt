@@ -1,0 +1,75 @@
+<<<<<<< HEAD
+ELATÓRIO FINAL - ETAPA 3
+Projeto: Previsão de Preços de Carros (Baseline)
+
+---
+
+1. RESULTADO DO MODELO
+Nesta primeira etapa, criamos um modelo simples (Regressão Linear) para testar se é possível prever os preços.
+
+Precisão (R²):** 70%
+    (O modelo conseguiu entender a lógica de preço de 7 a cada 10 carros).
+
+Margem de Erro (RMSE):** R$ 15.000,00
+    (Na média, o modelo erra o preço para cima ou para baixo nesse valor).
+
+---
+
+2. O QUE APRENDEMOS SOBRE O MERCADO?
+Analisando os dados, descobrimos o que faz o preço do carro disparar ou cair.
+
+O que valoriza o carro (Joga o preço para cima)
+1.  **Carros Elétricos e Híbridos:**
+    Ter essa tecnologia adiciona, em média, entre R$ 10.000 e R$ 20.000 ao valor final.
+2.  **Marca Volkswagen:**
+    Os dados mostram que veículos dessa marca tendem a segurar melhor o preço.
+
+O que desvaloriza o carro (Joga o preço para baixo)
+1.  **Combustível Etanol:**
+    Carros movidos exclusivamente a etanol sofrem uma desvalorização média de R$ 23.000.
+2.  **Versões de Entrada:**
+    Carros com bancos de tecido e tração simples valem menos, pois o modelo entende que são versões básicas.
+
+---
+
+ 3. CONCLUSÃO E PRÓXIMOS PASSOS
+O modelo "Baseline" funcionou e não decorou os dados (sem overfitting), mas um erro de 15 mil reais ainda é alto para o mercado.
+
+**O que faremos na Etapa 4?**
+Vamos trocar a "Regressão Linear" por modelos mais inteligentes (**Random Forest** e **XGBoost**). A meta é capturar regras mais complexas do mercado e tentar baixar esse erro para menos de 10 mil reais.
+
+
+Autor: Luiz Guilherme
+Data: 21/11/2025
+=======
+Métrica,Treino (60%),Validação (20%)
+R² (Explicação),0.6585 (65.8%),0.6987 (69.8%)
+RMSE (Erro Médio),"R$ 15.587,13","**R$ 14.325,58**"
+MAE (Erro Absoluto),"R$ 7.823,72","**R$ 8.154,25**"
+
+1. Contexto e Divisão dos Dados
+Para criar o modelo baseline de previsão de preços, utilizamos o dataset used_cars_price.csv contendo 2.520 registros. A estratégia de divisão foi 60/20/20:
+
+60% Treino: Para o algoritmo aprender os padrões.
+
+20% Validação: Para ajustar e verificar métricas durante o desenvolvimento.
+
+20% Teste: Isolados ("no cofre") para a validação final na Etapa 5.
+
+2. Resultados do Modelo Baseline
+Utilizamos uma Regressão Linear simples como ponto de partida. O modelo obteve um R² de 0.6987 na validação, o que significa que conseguimos explicar aproximadamente 70% da variação de preços dos carros usando apenas as características fornecidas (ano, quilometragem, marca, etc.).
+
+O erro médio absoluto (MAE) foi de R$ 8.154,25. Isso indica que, em média, nosso modelo erra o preço do carro em cerca de 8 mil reais para mais ou para menos. Considerando a variabilidade de preços de carros usados, é um ponto de partida razoável, mas que deixa margem para melhorias.
+
+3. Análise de Overfitting
+Comparando os resultados de Treino vs. Validação:
+
+R² Treino: 0.6585
+
+R² Validação: 0.6987
+
+Curiosamente, o modelo performou ligeiramente melhor na validação do que no treino. A diferença é pequena (cerca de 0.04) e não indica nenhum sinal de Overfitting (o modelo não "decorou" os dados). Pelo contrário, isso sugere que a divisão dos dados foi sortuda ou que os dados de validação são ligeiramente mais "fáceis" ou limpos que os de treino. O modelo está generalizando bem.
+
+4. Conclusão e Próximos Passos
+O Baseline cumpriu seu papel: estabeleceu um piso de performance (R² ~0.70). Para a Etapa 4 (Modelos Avançados), o objetivo será superar essa marca utilizando algoritmos mais robustos (como Random Forest ou XGBoost), que podem capturar relações não-lineares que a Regressão Linear simples não conseguiu enxergar, visando reduzir o erro médio para menos de R$ 7.000.
+>>>>>>> 45f9300919bc57b56aa6ce9b8c38d954b257562b

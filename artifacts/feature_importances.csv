@@ -1,0 +1,31 @@
+,0
+model_year,0.06412861
+accident_history_2+ acidentes,0.056944262
+drivetrain_Traseira,0.052398603
+color_Preto,0.04984868
+transmission_Manual,0.048437156
+mileage_km,0.045908816
+fuel_type_Elétrico,0.041410334
+drivetrain_Dianteira,0.04137163
+brand_Ford,0.038330242
+accident_history_Sem acidentes,0.03805273
+interior_material_Tecido,0.035849668
+condition_Excelente,0.027402975
+transmission_Automática,0.025910446
+horsepower,0.025609182
+interior_material_Couro Sintético,0.023426553
+service_history_Sem histórico,0.020089794
+fuel_type_Híbrido,0.019665206
+brand_Chevrolet,0.019537043
+color_Cinza,0.017820774
+condition_Regular,0.017641466
+airbags_count,0.017422149
+warranty_months,0.017035378
+previous_owners,0.016643334
+parking_sensors,0.015716698
+fuel_type_Etanol,0.0143680135
+fuel_type_Diesel,0.014244619
+condition_Ruim,0.013788499
+color_Vermelho,0.013592677
+sound_system_Multimídia,0.013531305
+engine_size_liters,0.012202968

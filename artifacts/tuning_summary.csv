@@ -1,0 +1,5 @@
+model,best_params,cv_neg_rmse,cv_rmse,train_cv_rmse_est
+XGBoost,"{'subsample': 0.6, 'n_estimators': 300, 'max_depth': 3, 'learning_rate': 0.05}",-15290.401171875,15290.401171875,10202.42916549683
+Ridge,{'alpha': 1.0},-15375.801782929888,15375.801782929888,15466.004390913984
+Lasso,{'alpha': 1.0},-15389.49663032371,15389.49663032371,15150.15613913503
+RandomForest,"{'n_estimators': 300, 'min_samples_split': 5, 'min_samples_leaf': 2, 'max_depth': None}",-18093.622979860033,18093.622979860033,10809.905796652853

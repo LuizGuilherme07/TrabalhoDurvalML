@@ -1,0 +1,1 @@
+{"best_model": "XGBoost", "best_params": {"subsample": 0.6, "n_estimators": 300, "max_depth": 3, "learning_rate": 0.05}, "test_metrics": {"R2": 0.4548729658126831, "RMSE": 24296.568975886286, "MAE": 10485.6611328125}, "baseline_val_metrics": {"R2": 0.698691907402074, "RMSE": 14325.583454531523, "MAE": 8154.250623073701}}
